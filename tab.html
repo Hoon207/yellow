@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>해외추천인기상품</title>
+  <style>
+    h1{text-align: center;}
+    .contentbox{width:1500px; margin:0 auto;}
+    .contentbox h2{text-align: center;}
+    .tab_content{width:1200px;}
+    li{list-style: none;}
+    .tab_menu{display: flex; width:300px;  justify-content: space-between; margin:50px auto;}
+    .tab{cursor: pointer;}
+    .active1{color:#0077ff; font-weight: bold;}
+    .content{display: none;}
+    .active2{display: block;}
+    .products{display: flex; width:1200px;}
+    .products li div:first-child {
+  overflow: hidden; 
+  position: relative;  /* 추가 */
+  width: 285px;        /* 이미지와 동일한 너비 */
+  height: 195px;       /* 이미지와 동일한 높이 */
+}
+    .products li { margin: 0px 20px; position: relative; width: 285px; height: 345px;}
+    .products img{width:285px; height:195px; transition: 0.5s;}
+    .package{position:absolute; color: whitesmoke; width:50px !important; height:50px !important; z-index: 10; font-size: 12px; text-align: center; background-color:#0077ff;}
+    .products img:hover{transform: scale(1.04);}
+
+  .txt{display: flex; justify-content: space-between; width:100px; position:absolute; bottom:0px;}
+  .products div span{margin: 16px 0px;}
+  .price{color:red; font-weight: bold; position:absolute; left:150px; bottom:0px; width:150px;}
+  .coupon {border: 1px solid #333;  border-radius: 5px;  font-size: 11px; padding: 3px;  background: linear-gradient(to right, rgb(255, 235, 15) 35%, rgb(255, 235, 15) 35%, white 35%, white 65%); }
+  
+    
+
+  </style>
+</head>
+<body>
+  <h1>노랑풍선 탭메뉴 - 자바스크립트</h1>
+  <hr>
+  <article class="contentbox">
+    <h2>✨추천 인기상품 BEST🛫</h2>
+    <ul class="tab_menu">
+      <li class="tab active1">4일 이하</li>
+      <li class="tab">5~6일</li>
+      <li class="tab">7~8일</li>
+      <li class="tab">9일 이상</li>
+    </ul>
+
+    <ul class="tab_content">
+      <li class="content active2">
+        <ul class="products">
+          <li>
+            <div>
+              <img src="./images/photo01.jpg" alt="">
+              <div class="package">
+                해외<br>패키지
+              </div>
+            </div>
+            <p class="title">홍콩 4일 #핵심관광 #반나절자유시간 #오후출발 #TW</p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">20,000</span>
+              <p class="price">성인 399,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo02.jpg" alt="">
+            </div>
+              <p class="title">대만 3일 #천등날리기 #핵심관광지 #ZE #김포출발일</p>
+              <div class="txt">
+              <span>쿠폰</span><span class="coupon">30,000</span>
+              <p class="price">성인 299,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo03.jpg" alt="">
+            </div>
+              <p class="title">[CJ온스타일]오사카3일#100%출발#꽉찬패턴#전일관광or유니버셜#간사이완전정복/오사카,교토,고베,나라</p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">80,000</span>
+              <p class="price">성인 629,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo04.jpg" alt="">
+            </div>
+            <p class="title">다낭/호이안 5일 #5성 #무엉탄럭셔리 #바나힐 #전신마사지 #망고아이스크림 RS511</p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">10,000</span>
+              <p class="price">성인 199,000 원~</p>
+            </div>
+          </li>
+        </ul>
+              </li>
+      <li class="content">
+        <ul class="products">
+          <li>
+            <div>
+              <img src="./images/photo05.jpg" alt="">
+            </div>
+            <p class="title">나트랑/달랏 5일 #홈쇼핑HIT #나트랑5성UP #랍스타무제한 #미식투어 #4명부터출발 #ZE561
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">30,000</span>
+              <p class="price">성인 299,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo06.jpg" alt="">
+            </div>
+             <p class="title">다낭/호이안 5일 #5성 #무엉탄럭셔리 #바나힐 #전신마사지 #망고아이스크림 RS511
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">10,000</span>
+              <p class="price">성인 199,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo07.png" alt="">
+            </div>
+              <p class="title">방콕 5일 #방콕왕복항공권 #여행자보험 포함
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">10,000</span>
+              <p class="price">성인 189,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo08.jpg" alt="">
+            </div>
+              <p class="title">다낭/호이안 5일 #5성 #바나힐테마파크 #미케비치자유시간 #위즐커피 #과일바구니 RS511
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">10,000</span>
+              <p class="price">성인 209,000 원~</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="content">
+        <ul class="products">
+          <li>
+            <div>
+              <img src="./images/photo09.jpg" alt="">
+            </div>
+            <p class="title">시드니/뉴캐슬/포트스테판 7일 #사막투어 #크루즈2회 #오페라내부
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 1,299,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo10.jpg" alt="">
+            </div>
+            <p class="title">하와이 5일 #와이키키리조트 #시티뷰 #에어프레미아신규취항
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 1,790,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo11.jpg" alt="">
+            </div>
+            <p class="title">시드니/브리즈번/골드코스트 6일 #스카이포인트
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 1,390,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo12.jpg" alt="">
+            </div>
+              <p class="title">뉴욕, 워싱턴, 나이아가라 7일 #4인이상출발확정
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 2,559,000 원~</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="content">
+        <ul class="products">
+          <li>
+            <div>
+              <img src="./images/photo13.jpg" alt="">
+            </div>
+            <p class="title">[ESTA비자무료포함 5/16까지] 미서부 9일 #3대도시 #5대캐년 #노쇼핑 #최저가
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 2,399,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo14.jpg" alt="">
+            </div>
+            <p class="title">동유럽 3국 9일#인솔자동반#프라하직항#부다페스트유람선#자유시간#고사우#야경#특식7회
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 2,590,000 원~</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img src="./images/photo15.jpg" alt="">
+            </div>
+            <p class="title">동유럽4국9일 #프라하특급호텔숙박 #8대특식 #2대야경포함 #독일관광포함 #아시아나직항
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 2,290,000 원~</p>
+            </div>
+          </li>
+          <li>
+          <div>
+            <img src="./images/photo16.jpg" alt="">
+          </div>
+            <p class="title">미동부, 캐나다 10일 #TOP PICK #힐튼호텔 #폭포뷰 #후기증명
+            </p>
+            <div class="txt">
+              <span>쿠폰</span><span class="coupon">100,000</span>
+              <p class="price">성인 3,290,000 원~</p>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </article>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.content');
+
+    tabs.forEach(function(tab,i){
+      tab.addEventListener('click',function(){
+        tabs.forEach(function(tab){
+          tab.classList.remove('active1');
+          contents.forEach(function(content){
+            content.classList.remove('active2');
+          })
+        })
+        tabs[i].classList.add('active1');
+        contents[i].classList.add('active2');
+        })
+      })
+ 
+
+
+
+  </script>
+</body>
+</html>
